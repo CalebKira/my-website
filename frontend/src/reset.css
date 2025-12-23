@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* doesn't allow overflow, keeping content restricted to the outside border */
+
+*:not(dialog) {
+    margin: 0;
+}
+/* removes margin across all elements except dialog (centers it around the viewport) */ 
+
+/* @media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+} */
+/* allows for specific words to be used such as 0px to auto for animations */
+
+body {
+    line-height: 1.5;
+    /* accessibility line height */
+    -webkit-font-smoothing: antialiased;
+    /* text rendering stuff to enhance contrast on 
+        things that are subpixel antialiased */
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/* media is now able to be edited for size and layed out like cards
+    instead of taking up as much space as needed. fits parent */
+
+input, button, textarea, select {
+    font: inherit;
+}
+/* golly this is nice, have these elements match typography of
+    parent.  */
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+/* avoids text overflowing and adds hyphens when a word is cut off */
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+/* makes the lines wrap and every new line have at least 2 words */
+
+
+#root, #__next {
+    isolation: isolate;
+}
+/* sets a context of priority when it comes to hierarchy */
