@@ -1,0 +1,13 @@
+/* defines some variables that the whole project can use. 
+    reference these values in the tailwind config file 
+    so that you can give them clean class names */
+
+@layer base{
+    :root {
+
+    }
+
+    .dark{
+        
+    }
+}

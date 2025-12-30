@@ -1,0 +1,7 @@
+/* idk if I still need this if I am using tailwind but here is the 
+    index css that sets defaults for the whole project */
+
+@import "tailwindcss";
+
+@import "./styles/reset.css";
+@import "./styles/tokens.css";
