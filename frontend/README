@@ -1,6 +1,7 @@
 Frontend:
 
-The frontend uses the React Framework to manage the navigation and rendering. Mainly using this due to familiarity as well as this website probably not being too big, it works to use a framework that implements an SPA.
+The frontend uses the React Framework to manage the navigation and rendering. Mainly using this due to familiarity as well as this website probably not being too big, it works to use a framework to make an SPA.
 
 Routing Pages:
-1. Nav bar in the top of the 
+1. Nav bar in the top of the website! 
+2. 
