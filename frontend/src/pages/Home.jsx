@@ -5,7 +5,7 @@ function Home(){
         <>
             <br></br><br></br><br></br>
 
-            <h1>Home</h1>
+            <h1>Home for general summary and organization </h1>
             {/* placeholder */}
         </>
     )

@@ -12,7 +12,7 @@ function Navbar() {
 
     return (
         <BrowserRouter>
-            <nav className="flex m-4">
+            <nav className="flex m-2">
                 <Link to="/" className="text-(length:--home-size)">Caleb Kira</Link>
                 {/* the (length:--home-size) defines it applies to fontsize, not color 
                     also sets the margins */}

@@ -6,8 +6,8 @@
     --style-italic: italic;
     /* for the general font basics across the site */
 
-    --home-size: 3.5rem;
-    --link-size: 3.0rem;
+    --home-size: 3rem;
+    --link-size: 2rem;
     /* the default home font size */ 
 }
 
