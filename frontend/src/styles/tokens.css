@@ -1,13 +1,17 @@
-/* defines some variables that the whole project can use. 
-    reference these values in the tailwind config file 
-    so that you can give them clean class names */
+/* don't need to define the layers for tailwind v4 */
 
-@layer base{
-    :root {
+:root {
+    --default-font: "Inter", sans-serif;
+    --weight-extralight: 200;
+    --style-italic: italic;
+    /* for the general font basics across the site */
 
-    }
-
-    .dark{
-        
-    }
+    --home-size: 3.5rem;
+    --link-size: 3.0rem;
+    /* the default home font size */ 
 }
+
+.dark{
+        
+}
+

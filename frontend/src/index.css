@@ -5,3 +5,18 @@
 
 @import "./styles/reset.css";
 @import "./styles/tokens.css";
+
+
+html {
+    font-size: 16px;
+}
+/* defining what 1rem actually is */
+
+body {
+    font-family: var(--default-font);
+    font-weight: var(--weight-extralight);
+    font-style: var(--style-italic);
+
+    /* this defines the defailt css for everything in the project */
+    /* use body instead of html, defining visual stuff and not sizing heirarchy */
+}
