@@ -11,54 +11,37 @@ function Darkmode(){
 
     const [dark, setDark] = useState(false);
     /* this holds if the site is in dark mode overall! */
-    const [picURL, setPicURL] = useState(lightPic);
-    /* this holds the image link */
+    const [hover, setHover] = useState(false);
+    /* this makes the logic and state usage more efficient:
+        just uses lambdas to check if in dark mode or if hovering rather than excessive checks */
     
 
     function onClick(){
-        if (dark == false){
-            setDark(true);
-            setPicURL(darkPic);
-        } 
-        else if (dark == true){
-            setDark(false);
-            setPicURL(lightPic);
-        }
+        setDark(!dark);
+        /* toggle this */
 
         document.documentElement.classList.toggle("dark");
         /* switches the picture and toggls if the dcocument has the dark mode class or not */
 
     }
 
-    function onEnter(){
-        if (dark == false){
-            setPicURL(lightHover);
-        }
-        else if (dark == true){
-            setPicURL(darkHover);
-        }
-        /* when hovering, set the picture to the curent mode hover image */
-    }
-
-    function onLeave(){
-        if (dark == false){
-            setPicURL(lightPic);
-        }
-        else if (dark == true){
-            setPicURL(darkPic);
-        }
-        /* when leaving hover, set the picture to the curent mode image */
-
-    }
-
     
     return (
         <button onClick={onClick} 
-            onMouseEnter={onEnter}
-            onMouseLeave={onLeave}>
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}>
             {/* set the hover picture functions */}
                 
-            <img src={picURL} alt="Dark Mode">
+            <img src={
+                dark ? 
+                /* first check if dark */
+                    (hover ? darkHover : darkPic) : 
+                    /* if dark, check if hover */
+
+                    (hover ? lightHover : lightPic)
+                    /* if light, check if hover */
+                } 
+                alt="Dark Mode"> 
             {/* this makes the picture changable */}
             </img>
         </button>
