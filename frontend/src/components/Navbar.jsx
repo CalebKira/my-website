@@ -1,4 +1,5 @@
 import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
+
 import Home from '../pages/Home.jsx'
 import About from '../pages/About.jsx'
 import Projects from '../pages/Projects.jsx'
@@ -7,15 +8,21 @@ import Music from '../pages/projects/Music.jsx'
 import Games from '../pages/projects/Games.jsx'
 import VoiceOver from '../pages/projects/VoiceOver.jsx'
 import Writing from '../pages/projects/Writing.jsx'
+/* all the other pages */
+
+import Darkmode from './Darkmode.jsx'
 
 function Navbar() {
 
     return (
         <BrowserRouter>
-            <nav className="flex m-2">
+            <nav className="flex m-2 gap-4">
                 <Link to="/" className="text-(length:--home-size)">Caleb Kira</Link>
                 {/* the (length:--home-size) defines it applies to fontsize, not color 
                     also sets the margins */}
+
+                <Darkmode></Darkmode>
+                
 
                 <div className="ml-auto flex gap-8">
                     <Link to="/about" className="text-(length:--link-size) ">About</Link>

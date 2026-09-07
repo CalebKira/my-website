@@ -4,14 +4,19 @@
     --default-font: "Inter", sans-serif;
     --weight-extralight: 200;
     --style-italic: italic;
+    --text-color: black;
     /* for the general font basics across the site */
 
     --home-size: 3rem;
     --link-size: 2rem;
     /* the default home font size */ 
+
+    --background-color: white;
+    
 }
 
 .dark{
-        
+    --background-color: black;
+    --text-color: white;
 }
 
