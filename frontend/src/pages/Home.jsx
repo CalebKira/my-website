@@ -1,5 +1,6 @@
 import Caleb_Art from "../assets/Caleb_Art_Backgroundless.png"
 import Arrow from "../assets/Arrow.png"
+import { Link } from "react-router-dom";
 
 function Home(){
     return (
@@ -26,7 +27,7 @@ function Home(){
                     {/* make a grid of 2 columns for arrows and buttons! */}
                     <img src={Arrow} style={{ filter: "var(--invert-img)" }}></img>
 
-
+                    <Link to="/about">About</Link>
                 </div>
 
 
