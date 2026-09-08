@@ -14,10 +14,13 @@
 
     --background-color: white;
 
+    --invert-img: invert(0);
+    /* defining an invert image value that changes when darkmode is selected */
 }
 
 .dark{
     --background-color: black;
     --text-color: white;
+    --invert-img: invert(1);
 }
 

@@ -9,6 +9,9 @@ import darkHover from "../assets/HoverD.png";
 
 function Darkmode(){
 
+    const bigPicSize = "58px";
+    /* size of the hover picture */
+
     const [dark, setDark] = useState(false);
     /* this holds if the site is in dark mode overall! */
     const [hover, setHover] = useState(false);
@@ -30,9 +33,10 @@ function Darkmode(){
         <button onClick={onClick} 
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
-            className="relative w-[58px] h-[58px]">
-            {/* set the hover picture functions */}
-            {/* also set the button size to the size of the largest image */}
+            className={`relative`}
+            style={{ width: bigPicSize, height: bigPicSize }}>
+            {/* set the hover picture functions, also set the button size to the size of the largest image. 
+                style determines the css to this particular element rather than preset functionality in className */}
 
             <img src={
                 dark ? 
