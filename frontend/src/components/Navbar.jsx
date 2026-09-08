@@ -19,7 +19,8 @@ function Navbar() {
 
     return (
         <BrowserRouter>
-            <nav className="flex m-4">
+            <nav className="flex m-4 px-4">
+                {/* use px-4 to give padding from right to left!!! USE FOR ALL */}
                 <div className="flex items-center gap-4">
                     <Link to="/" className="
                         text-(length:--home-size) text-(color:--text-color)
@@ -55,8 +56,6 @@ function Navbar() {
                     </Link>
                     {/* each link has a width box that they are in to not make the nav bar shift around. 
                         also smooth transitions to scale and change the color of the links via tailwind */}
-
-                    <br></br>
                 </div>
                 {/* this div defines the router links that are aligned to the right. Home is set to the left */}
             </nav>

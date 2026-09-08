@@ -29,20 +29,27 @@ function Darkmode(){
     return (
         <button onClick={onClick} 
             onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}>
+            onMouseLeave={() => setHover(false)}
+            className="relative w-[58px] h-[58px]">
             {/* set the hover picture functions */}
-                
+            {/* also set the button size to the size of the largest image */}
+
             <img src={
                 dark ? 
-                /* first check if dark */
-                    (hover ? darkHover : darkPic) : 
-                    /* if dark, check if hover */
+                /* first check if dark mode is set */
+                    (hover ? lightHover : lightPic) : 
+                    /* if dark, set to light mode and check if hover */
 
-                    (hover ? lightHover : lightPic)
-                    /* if light, check if hover */
+                    (hover ? darkHover : darkPic)
+                    /* if light, set to dark and check if hover */
+
+                /* this is all to make the picture changeable */
                 } 
-                alt="Dark Mode"> 
-            {/* this makes the picture changable */}
+                alt="Dark Mode"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"> 
+                {/* this sets the image at absolute position relative to button, 
+                    left pushes left edge to 1/2 or 50% of width of button, and then 
+                    translate it to the left 50% of the picture's OWN width. */}
             </img>
         </button>
     )
