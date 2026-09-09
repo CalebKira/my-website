@@ -10,12 +10,14 @@
     --home-size: 2.8rem;
     --link-size: 2rem;
     --highlight: rgb(127, 177, 221);
-    /* the default home font size */ 
+    --select-color: rgb(0, 60, 113);
+    /* the default font sizes for navbar */ 
 
     --background-color: white;
 
     --invert-img: invert(0);
     /* defining an invert image value that changes when darkmode is selected */
+
 }
 
 .dark{

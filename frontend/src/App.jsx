@@ -32,6 +32,7 @@ function App() {
                 <Route path="/projects/embedded" element={<Embedded />}/>
                 <Route path="/projects/webdev" element={<WebDev />}/>
             </Routes>
+            {/* Routes actually renders the page, so it is still under browser router's gaze */}
         </BrowserRouter>
     )
 }

@@ -1,6 +1,6 @@
 import Caleb_Art from "../assets/Caleb_Art_Backgroundless.png"
 import Arrow from "../assets/Arrow.png"
-import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 function Home(){
     return (
@@ -23,11 +23,11 @@ function Home(){
                     This is my website to summarize and encapsulate everything into a singular place for both you and me. 
                 </p>
 
-                <div className="grid grid-cols-2 gap-4 px-4">
+                <div className="grid grid-cols-2 gap-4 px-4 ">
                     {/* make a grid of 2 columns for arrows and buttons! */}
-                    <img src={Arrow} style={{ filter: "var(--invert-img)" }}></img>
+                    <img src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
 
-                    <Link to="/about">About</Link>
+                    <Button name="About" route="/about"/>
                 </div>
 
 
