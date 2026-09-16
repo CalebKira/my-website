@@ -23,11 +23,26 @@ function Home(){
                     This is my website to summarize and encapsulate everything into a singular place for both you and me. 
                 </p>
 
-                <div className="grid grid-cols-2 gap-4 px-4 ">
-                    {/* make a grid of 2 columns for arrows and buttons! */}
-                    <img src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
 
-                    <Button name="About" route="/about"/>
+                <div className="mt-16 grid grid-cols-3 gap-10 px-4">
+                    {/* make a grid of 2 effective columns for arrows and buttons! 
+                    mt makes the top have space, grid col 3 defines columns but allows
+                    for one to take more space, gap defines the spacing between items */}
+                    
+                    <img className="justify-self-end" src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
+                    <h3 className="text-left col-span-2">
+                        <Button name="Projects" route="/projects"/>: My Experience
+                    </h3>
+
+                    <img className="justify-self-end" src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
+                    <h3 className="text-left col-span-2">
+                        <Button name="About" route="/about"/>: My Story
+                    </h3>
+
+                    <img className="justify-self-end" src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
+                    <h3 className="text-left col-span-2">
+                        <Button name="Contact" route="/contact"/>: How to Contact Me
+                    </h3>
                 </div>
 
 
