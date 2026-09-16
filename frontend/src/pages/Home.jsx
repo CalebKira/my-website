@@ -24,11 +24,11 @@ function Home(){
                 </p>
 
 
-                <div className="mt-16 grid grid-cols-3 gap-10 px-4">
+                <div className="mt-16 grid grid-cols-3 gap-10 px-4 items-center">
                     {/* make a grid of 2 effective columns for arrows and buttons! 
                     mt makes the top have space, grid col 3 defines columns but allows
                     for one to take more space, gap defines the spacing between items */}
-                    
+
                     <img className="justify-self-end" src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
                     <h3 className="text-left col-span-2">
                         <Button name="Projects" route="/projects"/>: My Experience
@@ -45,6 +45,13 @@ function Home(){
                     </h3>
                 </div>
 
+                <div className="mt-24 grid grid-cols-2 gap-10">
+                    <h2 className="text-xl">
+                        Glad you are here and God Bless! 
+                    </h2>
+                    {/* add something here as a unique flair for who you are, symbol? */}
+
+                </div>
 
             </div>
         </div>
