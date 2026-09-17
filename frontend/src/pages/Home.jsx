@@ -50,6 +50,7 @@ function Home(){
                         Glad you are here and God Bless! 
                     </h2>
                     {/* add something here as a unique flair for who you are, symbol? */}
+                    
                 </div>
 
             </div>
