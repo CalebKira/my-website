@@ -16,7 +16,8 @@ import WebDev from './pages/projects/WebDev.jsx'
 function App() {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/my-website">
+            {/* adding the base path for the application because this is from github pages */}
             <Navbar />
             
             <Routes>
