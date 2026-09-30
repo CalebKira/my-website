@@ -13,8 +13,7 @@ function Navbar() {
             <div className="flex items-center gap-4">
                 <Link to="/" className="
                     text-(length:--home-size) text-(color:--text-color) font-[family-name:var(--link-font)]
-                    hover:text-(color:--highlight)
-                    transition-all">
+                    hover:text-(color:--highlight) transition-all font-bold">
                         Caleb Kira
                 </Link>
                 {/* on hover, it auto changes with tailwind to smooth switch the color */}
@@ -25,21 +24,21 @@ function Navbar() {
             <div className={"ml-auto flex items-center gap-12"}>
                 <Link to="/about" className="
                     text-(length:--link-size) text-(color:--text-color) font-[family-name:var(--link-font)]
-                    hover:text-(color:--highlight) hover:scale-110
+                    hover:text-(color:--highlight) hover:scale-110 font-bold
                     transition-all">
                         About
                 </Link>
 
                 <Link to="/projects" className="
                     text-(length:--link-size) text-(color:--text-color) font-[family-name:var(--link-font)]
-                    hover:text-(color:--highlight) hover:scale-110
+                    hover:text-(color:--highlight) hover:scale-110 font-bold
                     transition-all">
                         Projects
                 </Link>
 
                 <Link to="/contact" className="
                     text-(length:--link-size) text-(color:--text-color) font-[family-name:var(--link-font)]
-                    hover:text-(color:--highlight) hover:scale-110
+                    hover:text-(color:--highlight) hover:scale-110 font-bold
                     transition-all">
                         Contact
                 </Link>
