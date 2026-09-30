@@ -11,7 +11,7 @@
     --link-size: 2rem;
     --highlight: rgb(127, 177, 221);
     --select-color: rgb(0, 60, 113);
-    /* the default font sizes for navbar */ 
+    /* the default font css for navbar */ 
 
     --background-color: white;
 
@@ -24,5 +24,6 @@
     --background-color: black;
     --text-color: white;
     --invert-img: invert(1);
+    /* dark mode styles, including the invert value for specific images */
 }
 
