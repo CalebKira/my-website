@@ -12,7 +12,7 @@ function Navbar() {
             {/* use px-4 to give padding from right to left!!! USE FOR ALL */}
             <div className="flex items-center gap-4">
                 <Link to="/" className="
-                    text-(length:--home-size) text-(color:--text-color)
+                    text-(length:--home-size) text-(color:--text-color) font-[family-name:var(--link-font)]
                     hover:text-(color:--highlight)
                     transition-all">
                         Caleb Kira
@@ -22,23 +22,23 @@ function Navbar() {
                 <Darkmode></Darkmode>
             </div>
 
-            <div className={"ml-auto flex items-center gap-8"}>
+            <div className={"ml-auto flex items-center gap-12"}>
                 <Link to="/about" className="
-                    text-(length:--link-size) text-(color:--text-color)
+                    text-(length:--link-size) text-(color:--text-color) font-[family-name:var(--link-font)]
                     hover:text-(color:--highlight) hover:scale-110
                     transition-all">
                         About
                 </Link>
 
                 <Link to="/projects" className="
-                    text-(length:--link-size) text-(color:--text-color)
+                    text-(length:--link-size) text-(color:--text-color) font-[family-name:var(--link-font)]
                     hover:text-(color:--highlight) hover:scale-110
                     transition-all">
                         Projects
                 </Link>
 
                 <Link to="/contact" className="
-                    text-(length:--link-size) text-(color:--text-color)
+                    text-(length:--link-size) text-(color:--text-color) font-[family-name:var(--link-font)]
                     hover:text-(color:--highlight) hover:scale-110
                     transition-all">
                         Contact
