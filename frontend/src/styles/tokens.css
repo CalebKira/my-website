@@ -1,17 +1,17 @@
 /* don't need to define the layers for tailwind v4 */
 
 :root {
-    --default-font: "Inter", sans-serif;
-    --weight-extralight: 200;
-    --style-italic: italic;
+    --default-font: "Oxanium", sans-serif;
+    --weight: 400;
     --text-color: black;
     /* for the general font basics across the site */
 
+    --link-font: "Bruno Ace", sans-serif;
     --home-size: 2.8rem;
     --link-size: 2rem;
     --highlight: rgb(127, 177, 221);
     --select-color: rgb(0, 60, 113);
-    /* the default font sizes for navbar */ 
+    /* the default font css for navbar */ 
 
     --background-color: white;
 
@@ -24,5 +24,6 @@
     --background-color: black;
     --text-color: white;
     --invert-img: invert(1);
+    /* dark mode styles, including the invert value for specific images */
 }
 

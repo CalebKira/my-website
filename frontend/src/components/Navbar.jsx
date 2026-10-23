@@ -12,9 +12,8 @@ function Navbar() {
             {/* use px-4 to give padding from right to left!!! USE FOR ALL */}
             <div className="flex items-center gap-4">
                 <Link to="/" className="
-                    text-(length:--home-size) text-(color:--text-color)
-                    hover:text-(color:--highlight)
-                    transition-all">
+                    text-(length:--home-size) text-(--text-color) font-[family-name:var(--link-font)]
+                    hover:text-(--highlight) transition-all font-bold">
                         Caleb Kira
                 </Link>
                 {/* on hover, it auto changes with tailwind to smooth switch the color */}
@@ -22,24 +21,24 @@ function Navbar() {
                 <Darkmode></Darkmode>
             </div>
 
-            <div className={"ml-auto flex items-center gap-8"}>
+            <div className={"ml-auto flex items-center gap-12"}>
                 <Link to="/about" className="
-                    text-(length:--link-size) text-(color:--text-color)
-                    hover:text-(color:--highlight) hover:scale-110
+                    text-(length:--link-size) text-(--text-color) font-[family-name:var(--link-font)]
+                    hover:text-(--highlight) hover:scale-110 font-bold
                     transition-all">
                         About
                 </Link>
 
                 <Link to="/projects" className="
-                    text-(length:--link-size) text-(color:--text-color)
-                    hover:text-(color:--highlight) hover:scale-110
+                    text-(length:--link-size) text-(--text-color) font-[family-name:var(--link-font)]
+                    hover:text-(--highlight) hover:scale-110 font-bold
                     transition-all">
                         Projects
                 </Link>
 
                 <Link to="/contact" className="
-                    text-(length:--link-size) text-(color:--text-color)
-                    hover:text-(color:--highlight) hover:scale-110
+                    text-(length:--link-size) text-(--text-color) font-[family-name:var(--link-font)]
+                    hover:text-(--highlight) hover:scale-110 font-bold
                     transition-all">
                         Contact
                 </Link>

@@ -30,17 +30,17 @@ function Home(){
                     for one to take more space, gap defines the spacing between items */}
 
                     <img className="justify-self-end" src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
-                    <h3 className="text-left col-span-2">
+                    <h3 className="text-left col-span-2 font-bold text-2xl">
                         <Button name="Projects" route="/projects"/>: My Experience
                     </h3>
 
                     <img className="justify-self-end" src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
-                    <h3 className="text-left col-span-2">
+                    <h3 className="text-left col-span-2 font-bold text-2xl">
                         <Button name="About" route="/about"/>: My Story
                     </h3>
 
                     <img className="justify-self-end" src={Arrow} alt="Arrow" style={{ filter: "var(--invert-img)" }}></img>
-                    <h3 className="text-left col-span-2">
+                    <h3 className="text-left col-span-2 font-bold text-2xl">
                         <Button name="Contact" route="/contact"/>: How to Contact Me
                     </h3>
                 </div>
